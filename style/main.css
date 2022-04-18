@@ -1,45 +1,65 @@
-/*reset*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /*fixar o tamanho da caixa*/ 
-}
+@charset "UTF-8";
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*variables*/
 :root {
     --vermelho: #E50914;
     --preta: #141414;
+
+    --fonte-logo: 'Bebas Neue', cursive;
+    --fonte-descricao: 'Poppins', sans-serif;
+}
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*fixar o tamanho da caixa*/
 }
 
 /*elementos base*/
 body {
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--fonte-descricao);
     color: white;
 }
 
 header .container {
+    position: absolute;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(black, rgba(0, 0, 0, 0));
+    margin-left: 0;
 }
 
 header .logo {
-    margin-left: 5px;
+    margin-left: 30px;
     color: var(--vermelho);
-    font-family: 'Arial Black';
+    font-family: var(--fonte-logo);
     font-size: 40px;
+    font-weight: lighter;
 }
 
 header nav a {
     text-decoration: none;
-    color: #AAA;
+    color: #fff;
     margin-right: 10px;
+    font-family: var(--fonte-descricao);
+    font-weight: 400;
+    font-size: 14px;
 }
 
 header nav a:hover {
-    color: #fff;
+    color: #AAA;
+    transition: .4s ease all;
 }
 
 /*filme principal*/
@@ -47,7 +67,7 @@ header nav a:hover {
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('/img/background-rick-e-morty.jpg');
 
-    height: 400px;
+    height: 500px;
     background-size: cover;
 
     display: flex;
@@ -59,12 +79,16 @@ header nav a:hover {
 .filme-principal .descricao {
     margin-top: 10px;
     margin-bottom: 40px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .filme-principal .titulo {
     margin-top: 15%;
     font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--fonte-descricao);
+    font-weight: 500;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 .botao {
@@ -74,6 +98,7 @@ header nav a:hover {
 
     padding: 15px 30px;
     margin-right: 15px;
+    border-radius: 5px;
     font-size: 12px;
 
     cursor: pointer;
@@ -101,4 +126,12 @@ header nav a:hover {
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 10px;
+}
+
+.box-filme {
+    border-radius: 5px;
 }
