@@ -21,12 +21,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    /*fixar o tamanho da caixa*/
+    box-sizing: border-box;    
 }
 
 
-/*elementos base*/
+/*layout base*/
 body {
     background: var(--preta);
     font-family: var(--fonte-descricao);
@@ -46,6 +45,12 @@ header .container {
     margin-left: 0;
 }
 
+.container {
+    margin-left: 30px;
+}
+
+
+/*logo*/
 #logo {
     margin-left: 30px;
     color: var(--vermelho);
@@ -75,10 +80,11 @@ header nav a:hover {
 }
 
 
-/*filme principal*/
-.filme-principal {
+/*capa principal*/
+.capa-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('/img/background-rick-e-morty.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('/img/capa-destaque.jpg');
+    background-position: center;
 
     height: 500px;
     background-size: cover;
@@ -89,14 +95,18 @@ header nav a:hover {
     align-items: flex-start;
 }
 
-.filme-principal .descricao {
+.capa-principal .container {
+    width: 70%;
+}
+
+.capa-principal .descricao {
     margin-top: 10px;
     margin-bottom: 40px;
     font-weight: 300;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
-.filme-principal .titulo {
+.capa-principal .titulo {
     margin-top: 15%;
     font-size: 40px;
     font-family: var(--fonte-descricao);
@@ -119,33 +129,51 @@ header nav a:hover {
     transition: .3s ease all;
 }
 
+
 .botao:hover {
     background-color: white;
     color: black;
 }
 
 .botao i {
-    margin-right: 5px;
+    margin-right: 5px;  
 }
 
-.container {
-    margin-left: 30px;
+button a {
+    text-decoration: none;
+    font-family: var(--fonte-descricao);
+    font-weight: 400;
+    color: white;
 }
 
-.filme-principal .container {
-    width: 70%;
+button a:hover {
+    color: black;
 }
 
-.box-filme {
+
+/*categorias musicais*/
+.box-music {
     height: 100%;
     width: 100%;
     display: block;
+    border-radius: 5px;
 }
 
 .carrosel-filmes {
     margin-top: 10px;
 }
 
-.box-filme {
-    border-radius: 5px;
+.artista {
+    font-size: 18px;
 }
+
+.top-musicas{
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.album {
+    color: #5a5a5a;
+}
+
+
