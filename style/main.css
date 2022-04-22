@@ -24,6 +24,10 @@
     box-sizing: border-box;    
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /*layout base*/
 body {
@@ -66,7 +70,6 @@ header .container {
 }
 
 header nav a {
-    text-decoration: none;
     color: #fff;
     margin-right: 10px;
     font-family: var(--fonte-descricao);
@@ -118,6 +121,7 @@ header nav a:hover {
     background-color: rgba(0, 0, 0, 0.5);
     border: none;
     color: white;
+    font-family: var(--fonte-descricao);
 
     padding: 15px 30px;
     margin-right: 15px;
@@ -129,7 +133,6 @@ header nav a:hover {
     transition: .3s ease all;
 }
 
-
 .botao:hover {
     background-color: white;
     color: black;
@@ -139,41 +142,37 @@ header nav a:hover {
     margin-right: 5px;  
 }
 
-button a {
-    text-decoration: none;
-    font-family: var(--fonte-descricao);
-    font-weight: 400;
-    color: white;
+main a {
+    width: auto;
 }
-
-button a:hover {
-    color: black;
-}
-
 
 /*categorias musicais*/
-.box-music {
+.box-capas {
     height: 100%;
     width: 100%;
     display: block;
     border-radius: 5px;
 }
 
-.carrosel-filmes {
+.carrosel-musicas{
     margin-top: 10px;
 }
 
-.artista {
+.title-categories{
+    margin-top: 40px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.subtitle-destaque {
     font-size: 18px;
 }
 
-.top-musicas{
-    margin-top: 40px;
-    margin-bottom: 8px;
-}
-
-.album {
+.subtitle {
     color: #5a5a5a;
 }
 
-
+.button-img:hover {
+    border: 4px solid var(--preta);
+    border-radius: 8px;
+}
