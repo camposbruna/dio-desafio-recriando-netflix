@@ -1,23 +1,23 @@
 @charset "UTF-8";
 
-/*fonts*/
+/*===============FONTS===============*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-/*variables*/
+
+/*===============VARIABLES===============*/
 :root {
     --vermelho: #E50914;
     --preta: #141414;
+    --cinza: #5a5a5a;
 
     --fonte-logo: 'Bebas Neue', cursive;
-    --fonte-logo-music: font-family: 'Pacifico', cursive;
     --fonte-descricao: 'Poppins', sans-serif;
 }
 
-/*reset*/
+/*===============RESET===============*/
 * {
     margin: 0;
     padding: 0;
@@ -29,13 +29,28 @@ a {
 }
 
 
-/*layout base*/
+/*===============LAYOUT BASE===============*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--preta);
     font-family: var(--fonte-descricao);
     color: white;
 }
 
+.container {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+main a {
+    width: auto;
+}
+
+
+/*===============MENU===============*/
 header .container {
     position: fixed;
     z-index: 2;
@@ -49,13 +64,7 @@ header .container {
     margin-left: 0;
 }
 
-.container {
-    margin-left: 30px;
-}
-
-
-/*logo*/
-#logo {
+.logo {
     margin-left: 30px;
     color: var(--vermelho);
     font-family: var(--fonte-logo);
@@ -63,10 +72,14 @@ header .container {
     font-weight: lighter;
 }
 
-#logo-music {
-    color: #5a5a5a;
+.logo span {
+    color: var(--cinza);
     font-weight: 100;
     text-align: right;
+}
+
+header nav {
+    margin-right: 30px;
 }
 
 header nav a {
@@ -82,14 +95,13 @@ header nav a:hover {
     transition: .4s ease all;
 }
 
-
-/*capa principal*/
+/*===============CAPA PRINCIPAL===============*/
 .capa-principal {
     font-size: 16px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('/img/capa-destaque.jpg');
     background-position: center;
 
-    height: 500px;
+    height: 550px;
     background-size: cover;
 
     display: flex;
@@ -142,11 +154,7 @@ header nav a:hover {
     margin-right: 5px;  
 }
 
-main a {
-    width: auto;
-}
-
-/*categorias musicais*/
+/*===============CATEGORIES CARROSEL===============*/
 .box-capas {
     height: 100%;
     width: 100%;
@@ -169,10 +177,11 @@ main a {
 }
 
 .subtitle {
-    color: #5a5a5a;
+    color: var(--cinza);
 }
 
-.button-img:hover {
+.item:hover {
     border: 4px solid var(--preta);
     border-radius: 8px;
 }
+

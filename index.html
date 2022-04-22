@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
+    <link rel="shortcut icon" href="style/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/main.css">
 
     <!--responsividade-->
@@ -18,12 +19,14 @@
 <body>
     <header id="header">
         <div class="container">
-            <h2 id="logo">NETFLIX<span id="logo-music">music</span></h2>
+            <a href="index.html">
+                <h2 class="logo">NETFLIX<span>music</span></h2>
+            </a>
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#musicas">Músicas</a>
-                <a href="#artistas">Artistas</a>
-                <a href="#albuns">Álbuns</a>
+                <a href="index.html">Inicio</a>
+                <a href="#top-musicas">Músicas</a>
+                <a href="#top-artistas">Artistas</a>
+                <a href="#top-albuns">Álbuns</a>
             </nav>
         </div>
     </header>
@@ -34,7 +37,7 @@
                 <h3 class="titulo">Harry Styles • As It Was</h3>
                 <p class="descricao">Harry Styles fez parte do grupo One Direction e segue em carreira solo inovando na música com referências dos anos 1960 e 1970. O single As It Was se consagra em primeiro lugar como faixa a conseguir alcançar a marca de 200 milhões de streams mais rápido.</p>
                 <div class="botoes">
-                    <a href="https://youtu.be/H5v3kku4y6Q" target="_blank">
+                    <a href="pag001.html">
                     <button role="button" class="botao">
                     <i class="fa-solid fa-play"></i>ASSISTIR AGORA
                     </button></a> 
@@ -48,62 +51,56 @@
     </main>
 
     <!--TOP MUSICAS-->
-    <div class="carrosel-musicas container">
+    <div id="top-musicas" class="carrosel-musicas container">
         <h2 class="title-categories">As mais tocadas</h2>
         <div class="owl-carousel owl-theme">
-            <div class="item">
-                <div class="button-img">                    
-                    <a href="pag001.html" target="_blank">
-                        <img class="box-capas" src="img/top-musica01.jpg" alt="Envolver">
-                    </a>
-                </div>
-                <div>
+            <div class="item">                                   
+                    <a href="pag001.html"><img class="box-capas" src="img/top-musica01.jpg" alt="Envolver"></a>               
                     <p class="subtitle-destaque">Envolver</p>
-                    <p class="subtitle">Anitta</p>
-                </div>
+                    <p class="subtitle">Anitta</p>    
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-musica02.jpg" alt="As It Was">
+                <a href="pag001.html"><img class="box-capas" src="img/top-musica02.jpg" alt="As It Was"></a>
                 <p class="subtitle-destaque">As It Was</p>
                 <p class="subtitle">Harry Styles</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-musica03.jpg" alt="Try">
+                <a href="pag001.html"><img class="box-capas" src="img/top-musica03.jpg" alt="Try"></a>
                 <p class="subtitle-destaque">Try</p>
                 <p class="subtitle">Pink</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-musica04.jpg" alt="Unstoppable">
+                <a href="pag001.html"><img class="box-capas" src="img/top-musica04.jpg" alt="Unstoppable"></a>
                 <p class="subtitle-destaque">Unstoppable</p>
                 <p class="subtitle">Sia</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-musica05.jpg" alt="A Thousand Years">
+                <a href="pag001.html"><img class="box-capas" src="img/top-musica05.jpg" alt="A Thousand Years"></a>
                 <p class="subtitle-destaque">A Thousand Years</p>
                 <p class="subtitle">Christina Perri</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-musica06.jpg" alt="Vienna">
+                <a href="pag001.html"><img class="box-capas" src="img/top-musica06.jpg" alt="Vienna"></a>
                 <p class="subtitle-destaque">Vienna</p>
                 <p class="subtitle">Billy Joel</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-musica07.jpg" alt="Easy On Me">
+                <a href="pag001.html"><img class="box-capas" src="img/top-musica07.jpg" alt="Easy On Me"></a>
                 <p class="subtitle-destaque">Easy On Me</p>
                 <p class="subtitle">Adele</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-musica08.jpg" alt="Take Me To Church">
+                <a href="pag001.html"><img class="box-capas" src="img/top-musica08.jpg" alt="Take Me To Church"></a>
                 <p class="subtitle-destaque">Take Me To Church</p>
                 <p class="subtitle">Hozier</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-musica09.jpg" alt="Stand By Me">
+                <a href="pag001.html"><img class="box-capas" src="img/top-musica09.jpg" alt="Stand By Me"></a>
                 <p class="subtitle-destaque">Stand By Me</p>
                 <p class="subtitle">Ben E. King</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-musica10.jpg" alt="Perfect">
+                <a href="pag001.html"><img class="box-capas" src="img/top-musica10.jpg" alt="Perfect"></a>
                 <p class="subtitle-destaque">Perfect</p>
                 <p class="subtitle">Ed Sheeran</p>
             </div>
@@ -111,47 +108,47 @@
     </div>
 
     <!--TOP ARTISTAS-->
-    <div class="carrosel-musicas container">
+    <div id="top-artistas" class="carrosel-musicas container">
         <h2 class="title-categories">Artistas populares</h2>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-capas" src="img/top-artistas01.jpg" alt="Coldplay">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas01.jpg" alt="Coldplay"></a>
                 <p class="subtitle-destaque">Coldplay</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-artistas02.jpg" alt="Beyoncé">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas02.jpg" alt="Beyoncé"></a>
                 <p class="subtitle-destaque">Beyoncé</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-artistas03.jpg" alt="Justin Bieber">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas03.jpg" alt="Justin Bieber"></a>
                 <p class="subtitle-destaque">Justin Bieber</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-artistas04.jpg" alt="Eminem">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas04.jpg" alt="Eminem"></a>
                 <p class="subtitle-destaque">Eminem</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-artistas05.jpg" alt="Maroon 5">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas05.jpg" alt="Maroon 5"></a>
                 <p class="subtitle-destaque">Maroon 5</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-artistas06.jpg" alt="Billie Eilish">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas06.jpg" alt="Billie Eilish"></a>
                 <p class="subtitle-destaque">Billie Eilish</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-artistas07.jpg" alt="Imagine Dragons">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas07.jpg" alt="Imagine Dragons"></a>
                 <p class="subtitle-destaque">Imagine Dragons</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-artistas08.jpg" alt="Bruno Mars">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas08.jpg" alt="Bruno Mars"></a>
                 <p class="subtitle-destaque">Bruno Mars</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-artistas09.jpg" alt="Taylor Swift">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas09.jpg" alt="Taylor Swift"></a>
                 <p class="subtitle-destaque">Taylor Swift</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-artistas10.jpg" alt="The Weeknd">
+                <a href="pag001.html"><img class="box-capas" src="img/top-artistas10.jpg" alt="The Weeknd"></a>
                 <p class="subtitle-destaque">The Weeknd</p>
             </div>
         </div>
@@ -159,56 +156,56 @@
     
 
     <!--TOP ÁLBUNS-->
-    <div class="carrosel-musicas container">
+    <div id="top-albuns" class="carrosel-musicas container">
         <h2 class="title-categories">Álbuns em destaque</h2>
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-capas" src="img/top-albuns01.webp" alt="Versions of Me">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns01.webp" alt="Versions of Me"></a>
                 <p class="subtitle-destaque">Versions of Me</p>
                 <p class="subtitle">2022</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-albuns02.webp" alt="The Singles Box Set">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns02.webp" alt="The Singles Box Set"></a>
                 <p class="subtitle-destaque">The Singles Box Set</p>
                 <p class="subtitle">2003</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-albuns03.webp" alt="Nada como um dia após o outro dia">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns03.webp" alt="Nada como um dia após o outro dia"></a>
                 <p class="subtitle-destaque">Nada como um dia após o outro dia</p>
                 <p class="subtitle">2002</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-albuns04.webp" alt="21">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns04.webp" alt="21"></a>
                 <p class="subtitle-destaque">21</p>
                 <p class="subtitle">2011</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-albuns05.webp" alt="Happier Than Ever">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns05.webp" alt="Happier Than Ever"></a>
                 <p class="subtitle-destaque">Happier Than Ever</p>
                 <p class="subtitle">2021</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-albuns06.webp" alt="I Am...Sasha Fierce">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns06.webp" alt="I Am...Sasha Fierce"></a>
                 <p class="subtitle-destaque">I Am...Sasha Fierce</p>
                 <p class="subtitle">2008</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-albuns07.webp" alt="Random Access Memories">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns07.webp" alt="Random Access Memories"></a>
                 <p class="subtitle-destaque">Random Access Memories</p>
                 <p class="subtitle">2013</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-albuns08.webp" alt="Kell Smith (EP)">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns08.webp" alt="Kell Smith (EP)"></a>
                 <p class="subtitle-destaque">Kell Smith (EP)</p>
                 <p class="subtitle">2017</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-albuns09.webp" alt="The Truth About Love">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns09.webp" alt="The Truth About Love"></a>
                 <p class="subtitle-destaque">The Truth About Love</p>
                 <p class="subtitle">2012</p>
             </div>
             <div class="item">
-                <img class="box-capas" src="img/top-albuns10.webp" alt="Fallen">
+                <a href="pag001.html"><img class="box-capas" src="img/top-albuns10.webp" alt="Fallen"></a>
                 <p class="subtitle-destaque">Fallen</p>
                 <p class="subtitle">2003</p>
             </div>
